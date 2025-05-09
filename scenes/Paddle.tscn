@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c2i5ic2tb3m4u" path="res://assets/R.png" id="2_kefya"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pxrl1"]
-size = Vector2(20, 79)
+size = Vector2(20, 100)
 
 [node name="Paddle" type="CharacterBody2D"]
 script = ExtResource("1_qmtw8")
@@ -13,6 +13,6 @@ script = ExtResource("1_qmtw8")
 shape = SubResource("RectangleShape2D_pxrl1")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
-position = Vector2(1.90735e-06, 1)
-scale = Vector2(0.00722657, 0.0503125)
+position = Vector2(1.90735e-06, 1.3113e-06)
+scale = Vector2(0.00722657, 0.06125)
 texture = ExtResource("2_kefya")

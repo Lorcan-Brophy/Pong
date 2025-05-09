@@ -6,7 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Paddle" parent="." instance=ExtResource("1_d4de5")]
-position = Vector2(57, 234)
+position = Vector2(45, 307)
 
 [node name="Ball" parent="." instance=ExtResource("2_ppt3b")]
-position = Vector2(16, 326)
+position = Vector2(1110, 306)

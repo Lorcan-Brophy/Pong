@@ -1,10 +1,4 @@
-res://src/paddleMovement.gd
-res://scenes/node_2d.tscn
-res://scenes/ball.tscn
-res://src/ball.gd
-res://scenes/player.tscn
-res://scenes/main.tscn
-res://scenes/paddle.tscn
-res://scenes/Main.tscn
-res://scenes/Ball.tscn
 res://scenes/Paddle.tscn
+res://scenes/Ball.tscn
+res://scenes/Main.tscn
+res://src/ball.gd
