@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://sa505tfd4hr7"]
+
+[ext_resource type="PackedScene" uid="uid://5nt80i20s8f6" path="res://scenes/player.tscn" id="1_6i7r8"]
+[ext_resource type="PackedScene" uid="uid://le5i70g205gl" path="res://scenes/ball.tscn" id="2_1dis2"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Paddle" parent="." instance=ExtResource("1_6i7r8")]
+
+[node name="Ball" parent="." instance=ExtResource("2_1dis2")]
