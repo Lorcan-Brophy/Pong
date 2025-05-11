@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-var speed = 500  # Speed of the paddle's movement
+var speed = 600  # Speed of the paddle's movement
 
-func _process(delta):
+func _process(delta: float) -> void:
 	# listen for kb inputs
 	if Input.is_action_pressed("UP"): 
 		velocity.y = -1  # up

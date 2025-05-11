@@ -2,3 +2,6 @@ res://scenes/Paddle.tscn
 res://scenes/Ball.tscn
 res://scenes/Main.tscn
 res://src/ball.gd
+res://scenes/Opponent.tscn
+res://src/paddleMovement.gd
+res://src/opponent.gd

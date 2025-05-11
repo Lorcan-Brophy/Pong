@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://sa505tfd4hr7"]
+[gd_scene load_steps=4 format=3 uid="uid://sa505tfd4hr7"]
 
 [ext_resource type="PackedScene" uid="uid://5nt80i20s8f6" path="res://scenes/Paddle.tscn" id="1_d4de5"]
 [ext_resource type="PackedScene" uid="uid://le5i70g205gl" path="res://scenes/Ball.tscn" id="2_ppt3b"]
+[ext_resource type="PackedScene" uid="uid://tab2mfeguhp5" path="res://scenes/Opponent.tscn" id="3_o1dpd"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,4 +10,7 @@
 position = Vector2(45, 307)
 
 [node name="Ball" parent="." instance=ExtResource("2_ppt3b")]
-position = Vector2(1110, 306)
+position = Vector2(568, 320)
+
+[node name="Opponent" parent="." instance=ExtResource("3_o1dpd")]
+position = Vector2(1117, 315)

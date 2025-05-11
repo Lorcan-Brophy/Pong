@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://tab2mfeguhp5"]
+
+[ext_resource type="Script" path="res://src/opponent.gd" id="1_1qfky"]
+[ext_resource type="Texture2D" uid="uid://c2i5ic2tb3m4u" path="res://assets/R.png" id="1_i6khf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kpmqy"]
+size = Vector2(20, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtiwk"]
+size = Vector2(22, 62)
+
+[node name="Opponent" type="CharacterBody2D"]
+script = ExtResource("1_1qfky")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kpmqy")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(-5.96046e-07, -1.01328e-06)
+scale = Vector2(0.00703125, 0.0375)
+texture = ExtResource("1_i6khf")
+
+[node name="Detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_xtiwk")
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
